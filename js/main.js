@@ -13,8 +13,12 @@ Pizza.prototype.findCost = function() {
   } else if (this.size === "large") {
     this.price = 20;
   }
-
+  for (var i = 0; i < this.toppings.length; i++) {
+      this.price = this.price + 1;
+    }
+    return "$" + this.price;
   }
+
 
 
 
