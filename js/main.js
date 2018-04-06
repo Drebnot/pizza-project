@@ -6,7 +6,7 @@ this.price = 0;
 }
 
 Pizza.prototype.findCost = function() {
-  if (this.size === "Small") {
+  if (this.size === "small") {
     this.price = 10;
   } else if (this.size === "medium") {
     this.price = 15;
@@ -20,11 +20,14 @@ Pizza.prototype.findCost = function() {
   }
 
 
+  // User Interface Logic
+  $(document).ready(function() {
+    $("#pizza-form").submit(function(event) {
+      event.preventDefault();
 
 
 
-// User Interface logic
-// $(document).ready(function() {
-//
-//
-// });
+
+  });
+
+});
