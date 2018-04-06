@@ -12,7 +12,6 @@ PizzaOrder.prototype.findCost = function() {
   } else if (this.size === "large") {
     pizzaPrice += 10;
   }
-}
 
 
 

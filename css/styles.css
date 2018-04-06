@@ -1,0 +1,13 @@
+.jumbotron {
+  color: white;
+  background-color: green;
+  text-align: center;
+}
+body {
+  background-color: red;
+}
+
+.well {
+  color: white;
+  background-color: green;
+}
