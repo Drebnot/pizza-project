@@ -5,7 +5,7 @@ this.size = size;
 this.price = 0;
 }
 
-PizzaOrder.prototype.findCost = function() {
+Pizza.prototype.findCost = function() {
   if (this.size === "Small") {
     this.price = 10;
   } else if (this.size === "medium") {
