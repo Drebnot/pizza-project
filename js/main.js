@@ -2,16 +2,16 @@
 function Pizza (toppings, size) {
 this.toppings = [];
 this.size = size;
-this.price = 15;
+this.price = 0;
 }
 
 PizzaOrder.prototype.findCost = function() {
-
-  var pizzaPrice = 15;
-  if (this.size === "medium") {
-    pizzaCost += 5;
+  if (this.size === "Small") {
+    this.price = 10;
+  } else if (this.size === "medium") {
+    this.price = 15;
   } else if (this.size === "large") {
-    pizzaPrice += 10;
+    this.price = 20;
   }
 
   }
