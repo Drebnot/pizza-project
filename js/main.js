@@ -25,20 +25,19 @@ Pizza.prototype.findCost = function() {
     $("#pizza-form").submit(function(event) {
       event.preventDefault();
 
+
+
       var radioSize =
       $("input:radio[name=size]:checked").val();
       var toppings =
       $("input:checkbox[name=toppings]:checked").each(function(){
-
+        newPizza.toppings.push($(this).val());
   });
 
       var newPizza = new Pizza(toppings, radioSize);
         newPizza.findCost();
 
-
-
-
-    $(newPizza.price).show;
+        $("findCost").show(newPizza.price);
 
 
   });

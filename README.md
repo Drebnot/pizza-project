@@ -1,6 +1,6 @@
 # _Pizza Project_
 
-#### _A Pizza Project for Epicodus, March 23 2018_
+#### _A Pizza Project for Epicodus, April 6th 2018_
 
 #### By _**Jesse Drebin**_
 
